@@ -22,8 +22,8 @@
 
 @font-face {
     font-family: 'DIN Next LT Arabic xs';
-    src: url('./assets/Font/AllFont/ArbFONTS-DINNextLTArabic-Regular-4.ttf') format('woff2'), /* الخيار المفضل للمتصفح */
-         url('./assets/Font/AllFont/ArbFONTS-DINNextLTArabic-Regular-4.ttf') format('woff'); /* التنسيق الآخر للاحتياط */
+    src: url('./assets/Font/AllFont/ArbFONTS-DINNEXTLTARABIC-LIGHT-1.ttf') format('woff2'), /* الخيار المفضل للمتصفح */
+         url('./assets/Font/AllFont/ArbFONTS-DINNEXTLTARABIC-LIGHT-1.ttf') format('woff'); /* التنسيق الآخر للاحتياط */
     font-weight: normal;
     font-style: normal;
 }
@@ -42,4 +42,8 @@ body {
 
 .DIN-xs {
     font-family: 'DIN Next LT Arabic xs', sans-serif;
+}
+
+.sidebar-links .active{
+    background: #EE7824;
 }

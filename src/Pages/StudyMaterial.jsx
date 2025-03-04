@@ -3,8 +3,9 @@ import Sidebar from "../components/Sidebar";
 
 const studyMaterial = () => {
   return (
-    <div>
-      <Sidebar/>
+    <div className="flex">
+      <Sidebar />
+      <h1>Study Material</h1>
     </div>
   );
 };

@@ -1,7 +1,13 @@
 import React from "react";
+import Sidebar from "../components/Sidebar";
 
 const Statistics = () => {
-  return <div>Statistics</div>;
+  return (
+    <div className="flex">
+      <Sidebar/>
+      <h1>Statistics</h1>
+    </div>
+  );
 };
 
 export default Statistics;
