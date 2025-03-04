@@ -15,12 +15,12 @@ return (
                                 <form className="flex flex-col gap-2 py-2">
                                         <div className="flex flex-col gap-1">
                                                 <label className="text-[16px]">Code</label>
-                                                <input className="px-2 py-2.5 border border-[#B9BBCB] text-[14px] DIN-sm rounded-[8px]" type="text" placeholder="Enter your code here" />
+                                                <input className="px-2 py-2.5 border border-[#B9BBCB] text-[14px] DIN-sm rounded-[8px]" name="Code user" type="text" placeholder="Enter your code here" />
                                         </div>
                                         <div className="flex flex-col gap-1">
                                                 <label className="text-[16px]">Password</label>
                                                 <div className="relative">
-                                                <input className="px-2 py-2.5 border border-[#B9BBCB] text-[14px] DIN-sm rounded-[8px] w-full" type={`${showPassword ? "text" : "password"}`} placeholder="Enter your password here" />
+                                                <input className="px-2 py-2.5 border border-[#B9BBCB] text-[14px] DIN-sm rounded-[8px] w-full" name="Password user" type={`${showPassword ? "text" : "password"}`} placeholder="Enter your password here" />
                                                 <i onClick={handleShowPassword} className={`${showPassword ? "far fa-eye-slash" : "far fa-eye"} absolute right-3 top-2.5 text-[17px] text-[#666666] cursor-pointer`}></i>
                                                 </div>
                                         </div>

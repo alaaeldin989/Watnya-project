@@ -1,49 +1,75 @@
 @font-face {
-    font-family: 'DIN Next LT Arabic';
-    src: url('./assets/Font/AllFont/ArbFONTS-DINNextLTArabic-Medium-3.ttf') format('woff2'), /* الخيار المفضل للمتصفح */
-         url('./assets/Font/AllFont/ArbFONTS-DINNextLTArabic-Medium-3.ttf') format('woff'); /* التنسيق الآخر للاحتياط */
-    font-weight: normal;
-    font-style: normal;
+  font-family: "DIN Next LT Arabic";
+  src: url("./assets/Font/AllFont/ArbFONTS-DINNextLTArabic-Medium-3.ttf")
+      format("woff2"),
+    /* الخيار المفضل للمتصفح */
+      url("./assets/Font/AllFont/ArbFONTS-DINNextLTArabic-Medium-3.ttf")
+      format("woff"); /* التنسيق الآخر للاحتياط */
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
-    font-family: 'DIN Next LT Arabic normal';
-    src: url('./assets/Font/AllFont/ArbFONTS-DINNextLTArabic-Regular-3.ttf') format('woff2'), /* الخيار المفضل للمتصفح */
-         url('./assets/Font/AllFont/ArbFONTS-DINNextLTArabic-Regular-3.ttf') format('woff'); /* التنسيق الآخر للاحتياط */
-    font-weight: normal;
-    font-style: normal;
+  font-family: "DIN Next LT Arabic normal";
+  src: url("./assets/Font/AllFont/ArbFONTS-DINNextLTArabic-Regular-3.ttf")
+      format("woff2"),
+    /* الخيار المفضل للمتصفح */
+      url("./assets/Font/AllFont/ArbFONTS-DINNextLTArabic-Regular-3.ttf")
+      format("woff"); /* التنسيق الآخر للاحتياط */
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
-    font-family: 'DIN Next LT Arabic sm';
-    src: url('./assets/Font/AllFont/ArbFONTS-DINNextLTArabic-Regular-4.ttf') format('woff2'), /* الخيار المفضل للمتصفح */
-         url('./assets/Font/AllFont/ArbFONTS-DINNextLTArabic-Regular-4.ttf') format('woff'); /* التنسيق الآخر للاحتياط */
-    font-weight: normal;
-    font-style: normal;
+  font-family: "DIN Next LT Arabic sm";
+  src: url("./assets/Font/AllFont/ArbFONTS-DINNextLTArabic-Regular-4.ttf")
+      format("woff2"),
+    /* الخيار المفضل للمتصفح */
+      url("./assets/Font/AllFont/ArbFONTS-DINNextLTArabic-Regular-4.ttf")
+      format("woff"); /* التنسيق الآخر للاحتياط */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DIN Next LT Arabic lg";
+  src: url("./assets/Font/AllFont/ArbFONTS-DINNextLTArabic-Medium-4.ttf")
+      format("woff2"),
+    /* الخيار المفضل للمتصفح */
+      url("./assets/Font/AllFont/ArbFONTS-DINNextLTArabic-Medium-4.ttf")
+      format("woff"); /* التنسيق الآخر للاحتياط */
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'DIN Next LT Arabic xs';
-    src: url('./assets/Font/AllFont/ArbFONTS-DINNEXTLTARABIC-LIGHT-1.ttf') format('woff2'), /* الخيار المفضل للمتصفح */
-         url('./assets/Font/AllFont/ArbFONTS-DINNEXTLTARABIC-LIGHT-1.ttf') format('woff'); /* التنسيق الآخر للاحتياط */
-    font-weight: normal;
-    font-style: normal;
+  font-family: "DIN Next LT Arabic xs";
+  src: url("./assets/Font/AllFont/ArbFONTS-DINNEXTLTARABIC-LIGHT-1.ttf")
+      format("woff2"),
+    /* الخيار المفضل للمتصفح */
+      url("./assets/Font/AllFont/ArbFONTS-DINNEXTLTARABIC-LIGHT-1.ttf")
+      format("woff"); /* التنسيق الآخر للاحتياط */
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
-    font-family: 'DIN Next LT Arabic', sans-serif;
+  font-family: "DIN Next LT Arabic", sans-serif;
 }
 
 .DIN-normal {
-    font-family: 'DIN Next LT Arabic normal', sans-serif;
+  font-family: "DIN Next LT Arabic normal", sans-serif;
 }
 
 .DIN-sm {
-    font-family: 'DIN Next LT Arabic sm', sans-serif;
+  font-family: "DIN Next LT Arabic sm", sans-serif;
 }
 
 .DIN-xs {
-    font-family: 'DIN Next LT Arabic xs', sans-serif;
+  font-family: "DIN Next LT Arabic xs", sans-serif;
 }
 
-.sidebar-links .active{
-    background: #EE7824;
+.DIN-lg {
+  font-family: "DIN Next LT Arabic lg", sans-serif;
+}
+
+.sidebar-links .active {
+  background: #ee7824;
 }

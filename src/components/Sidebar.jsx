@@ -66,10 +66,10 @@ const Sidebar = () => {
           </div>
         </div>
 
-            <div className="flex gap-2 px-2 items-end h-[100%] justify-between py-2.5 rounded-[8px] cursor-pointer pb-4">
+            <NavLink to={"/"} className="flex gap-2 px-2 items-end h-[100%] justify-between py-2.5 rounded-[8px] cursor-pointer pb-4">
                 <p className="text-[16px] DIN-sm">Logout</p>
                 <img src="../src/assets/logout.svg" alt="" />
-        </div>
+        </NavLink>
       </div>
     </div>
   );
