@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router";
 
-const Login = () => {
+const Login = ({ userRole, setUserRole }) => {
         const [showPassword, setShowPassword] = useState(false);
 
         const handleShowPassword = () => setShowPassword(!showPassword);
@@ -25,7 +25,7 @@ return (
                                                 </div>
                                         </div>
                                         <div className="mt-2 flex text-center">
-                                                <NavLink to={"/study-material"} className="bg-[#303192] text-white w-full px-2 text-[14px] DIN-sm  py-2.5 rounded-[8px]">Login</NavLink>
+                                                <NavLink to={`${userRole == "admin" ? "/study-material-Admin" : userRole == "doctor" ? "/study-material-doctor" : userRole == "student" ? "/Grade-student" : "/error" }`} className="bg-[#303192] text-white w-full px-2 text-[14px] DIN-sm  py-2.5 rounded-[8px]">Login</NavLink>
                                         </div>
                                 </form>
                             </div>
