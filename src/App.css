@@ -70,6 +70,10 @@ body {
   font-family: "DIN Next LT Arabic lg", sans-serif;
 }
 
+.sidebar-links a{
+  transition: all 0.2s ease-in-out;
+}
+
 .sidebar-links .active {
   background: #ee7824;
 }
@@ -101,3 +105,8 @@ background-color: #56565652;
     font-size: 10px !important;
     height: 25px !important;
 }
+input:focus{
+    outline: none !important;
+    border: 1px solid #303192;
+}
+

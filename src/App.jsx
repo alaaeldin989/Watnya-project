@@ -14,7 +14,7 @@ import GradeStudent from "./Pages/StudentPanel/GradeStudent";
 
 
 const App = () => {
-  const [userRole, setUserRole] = useState("student");
+  const [userRole, setUserRole] = useState("doctor");
   const location = useLocation();
 
   useEffect(() => {
