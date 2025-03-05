@@ -72,7 +72,7 @@ const TableDoctors = () => {
     </div>
 
     <table className="w-full mt-6 text-center rounded-t-[24px] overflow-hidden">
-      <thead className="DIN-xs bg-[#303192] text-white text-center text-[16px]">
+      <thead className="DIN-xs bg-[#303192] text-white text-center text-[16px] flex justify-around">
         <th className="py-2">Name</th>
         <th className="py-2">Email</th>
         <th className="py-2">Phone number</th>
