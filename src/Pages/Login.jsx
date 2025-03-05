@@ -30,7 +30,7 @@ return (
                                 </form>
                             </div>
                             <div className="md:w-[50%] h-full w-full">
-                            <div className="bg-[url('../src/assets/bgLogo.svg')] flex justify-center items-center h-full w-[100%] bg-no-repeat py-4 md:rounded-r-[24px] md:rounded-t-[0px] rounded-t-[24px]">
+                            <div className="bg-[url('../src/assets/bgLogo.svg')] flex justify-center items-center h-full w-[100%] bg-no-repeat py-4 md:rounded-r-[24px] md:rounded-tr-[24px] rounded-br-[24px]">
                             <img src="../src/assets/Logo.svg" alt="" className="md:w-[70%] w-[45%]"/>
                             </div>
                             </div>
