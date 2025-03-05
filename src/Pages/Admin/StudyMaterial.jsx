@@ -1,22 +1,36 @@
 import React from "react";
+import Sidebar from "../../components/Sidebar";
+import FilterStudy from "../../components/StudyMaterial/FilterStudy";
+import TableStudy from "../../components/StudyMaterial/TableStudy";
 
-const TableStudy = () => {
+const studyMaterial = () => {
+  const date = new Date();
+  const options = {
+    weekday: "long",
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+    locale: "ar-SA",
+  };
+  const formatDate = new Intl.DateTimeFormat("en", options).format(date);
+
   return (
-    <div className="w-full px-3 py-3">
-      <div className="flex justify-between items-center">
-        <div className="">
-          <h1 className="text-[24px]">Study Materials</h1>
-          <p className="text-[#666666] text-[16px] DIN-normal">
-            You can add or edit study materials from here.
-          </p>
-        </div>
-        <div className="text-[17px] group DIN-lg border border-[#1E2458]  cursor-pointer hover:bg-[#1E2458] duration-300 px-2 py-2 rounded-[8px]">
-          <button
-            className="text-[#1E2458] group-hover:text-white duration-300"
-            onClick={() => document.getElementById("my_modal_4").showModal()}>
-            Add a new study material
-          </button>
-          <dialog id="my_modal_4" className="modal">
+    <div className="">
+    <div className="flex">
+      <Sidebar />
+      <div className="w-full">
+      <div className=" w-full">
+        <div className=" border-b w-full">
+          <div className="px-6 py-3 flex justify-between items-center">
+            <div className="">
+              <h1 className="text-[#303192] text-[24px]">Study Material</h1>
+              <p className="text-[#666666] text-[16px] DIN-normal">
+                {formatDate}
+              </p>
+            </div>
+            <div className="bg-[#E9E9EE] text-[#666666] w-9 h-9 cursor-pointer hover:bg-[#303292b9] duration-300 hover:text-white flex items-center justify-center rounded-[8px]">
+              <i className="fas fa-cog"></i>
+              <dialog id="my_modal_4" className="modal">
             <div className="modal-box w-[90%] max-w-2xl">
               <h3 className="text-lg text-center py-2">
                 Add Study Material Data
@@ -76,23 +90,18 @@ const TableStudy = () => {
               </div>
             </div>
           </dialog>
+            </div>
+          </div>
         </div>
+      </div>      
+      <div className="">
+      <FilterStudy/>
+      <TableStudy/>
       </div>
-
-      <table className="w-full mt-6 text-center rounded-t-[24px] overflow-hidden">
-        <thead className="DIN-xs bg-[#303192] text-white text-center text-[16px]">
-          <th className="py-2">Code</th>
-          <th className="py-2">Subject</th>
-          <th className="py-2">Credit Hours</th>
-          <th className="py-2">Specialization</th>
-          <th className="py-2">Level</th>
-          <th className="py-2">Semester</th>
-          <th className="py-2">Actions</th>
-        </thead>
-        <tbody></tbody>
-      </table>
+      </div>
+      </div>
     </div>
   );
 };
 
-export default TableStudy;
+export default studyMaterial;
