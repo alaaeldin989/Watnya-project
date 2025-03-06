@@ -1,9 +1,8 @@
 import React from "react";
-import Sidebar from "../components/Sidebar";
-import FilterStudy from "../components/StudyMaterial Admin/FilterStudy";
-import TableStudy from "../components/StudyMaterial Admin/TableStudy";
+import StatisticsSection from "../../components/Statistics Admin/StatisticsSection";
+import TableStatistics from "../../components/Statistics Admin/TableStatistics";
 
-const studyMaterial = () => {
+const Statistics = () => {
   const date = new Date();
   const options = {
     weekday: "long",
@@ -17,13 +16,12 @@ const studyMaterial = () => {
   return (
     <div className="w-full">
       <div className="w-full">
-        {/* <Sidebar /> */}
         <div className="w-full">
           <div className=" w-full">
             <div className=" border-b w-full">
               <div className="px-6 py-3 flex justify-between items-center">
                 <div className="">
-                  <h1 className="text-[#303192] text-[24px]">Study Material</h1>
+                  <h1 className="text-[#303192] text-[24px]">Statistics</h1>
                   <p className="text-[#666666] text-[16px] DIN-normal">
                     {formatDate}
                   </p>
@@ -104,8 +102,8 @@ const studyMaterial = () => {
             </div>
           </div>
           <div className="">
-            <FilterStudy />
-            <TableStudy />
+            <StatisticsSection />
+            <TableStatistics />
           </div>
         </div>
       </div>
@@ -113,4 +111,4 @@ const studyMaterial = () => {
   );
 };
 
-export default studyMaterial;
+export default Statistics;

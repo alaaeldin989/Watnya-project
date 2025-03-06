@@ -1,7 +1,6 @@
 import React from "react";
-import Sidebar from "../components/Sidebar";
-import FilterStudent from "../components/Student Admin/FilterStudent";
-import TableStudet from "../components/Student Admin/TableStudet";
+import FilterStudent from "../../components/Student Admin/FilterStudent";
+import TableStudet from "../../components/Student Admin/TableStudet";
 
 const StudentPanel = () => {
   const date = new Date();
@@ -17,7 +16,6 @@ const StudentPanel = () => {
   return (
     <div className="w-full">
     <div className="w-full">
-      {/* <Sidebar /> */}
       <div className="w-full">
       <div className=" w-full">
         <div className=" border-b w-full">

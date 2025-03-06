@@ -1,7 +1,6 @@
 import React from "react";
-import Sidebar from "../components/Sidebar";
-import FilterDoctors from "../components/Doctors Admin/FilterDoctors";
-import TableDoctors from "../components/Doctors Admin/TableDoctors";
+import FilterDoctors from "../../components/Doctors Admin/FilterDoctors";
+import TableDoctors from "../../components/Doctors Admin/TableDoctors";
 
 const DoctorPanel = () => {
   const date = new Date();
@@ -17,7 +16,6 @@ const DoctorPanel = () => {
   return (
     <div className="w-full">
       <div className="w-full">
-        {/* <Sidebar /> */}
         <div className="w-full">
           <div className=" w-full">
             <div className=" border-b w-full">
